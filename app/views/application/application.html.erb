@@ -5,86 +5,123 @@
 
 
 
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+     #myDIV {
+       width: 100%;
+       padding: 50px 0;
+       text-align: center;
+       background-color: lightblue;
+       margin-top: 20px;
+     }
+   </style>
+ </head>
+ <body>
+
+ <p>Pozrel som sa na predchádzajúci článok.bČlánok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.
+
+   Je známy autor tohto článku?</p>
+
+ <button id='authorknownbutton' onclick="Function('authorknown','authornotknownbutton')">Áno</button>
+ <button id='authornotknownbutton' onclick="Function('authornotknown','authorknownbutton')">Nie</button>
+
+ <div id="authorknown" style="display:none" >
+   To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.
+
+   Vyvoláva v tebe článok strach?
+
+
+   <button id='scarybutton' onclick="Function('scary','notscarybutton')">Áno</button>
+   <button id='notscarybutton' onclick="Function('notscary','scarybutton')">Nie</button>
+
+ </div>
+
+ <div id="authornotknown" style="display:none" >
+   Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.
+
+   Vyvoláva v tebe článok strach?
+
+
+   <button id='scarybutton1' onclick="Function('scary','notscarybutton1')">Áno</button>
+   <button id='notscarybutton1' onclick="Function('notscary','scarybutton1')">Nie</button>
+
+ </div>
+
+
+
+ <div id="notscary" style="display:none" >
+   To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.
+   Šíri článok nenávisť proti nejakej skupine ľudí?
+
+   <button id="hatredbutton" onclick="Function('hatred','nohatredbutton')">Áno</button>
+   <button id="nohatredbutton" onclick="Function('nohatred','hatredbutton')">Nie</button>
+
+ </div>
+
+
+ <div id="scary" style="display:none" >
+   Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.
+
+   Šíri článok nenávisť proti nejakej skupine ľudí?
+
+   <button id="hatredbutton1" onclick="Function('hatred','nohatredbutton1')">Áno</button>
+   <button id="nohatredbutton1" onclick="Function('nohatred','hatredbutton1')">Nie</button>
+
+
+ </div>
+
+ <div id="nohatred" style="display:none" >
+   Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.
+   Dáva článok priestor protistrane?
+
+   <button id="counterpartybutton" onclick="Function('counterparty','nocounterpartybutton')">Áno</button>
+   <button id="nocounterpartybutton" onclick="Function('nocounterparty', 'counterpartybutton')">Nie</button>
+
+ </div>
+
+ <div id="hatred" style="display:none" >
+   Pozor! Nenávistné prejavy môžu skončiť veľmi zle.
+   Dáva článok priestor protistrane?
+
+   <button id="counterpartybutton1" onclick="Function('counterparty','nocounterpartybutton1')">Áno</button>
+   <button id="nocounterpartybutton1" onclick="Function('nocounterparty', 'counterpartybutton1')">Nie</button>
+
+ </div>
+
+ <div id="counterparty" style="display:none" >
+   Seriózne médium dá vždy priestor protistrane.
+
+
+
+ </div>
+
+
+ <div id="nocounterparty" style="display:none" >
+   Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.
+
+
+
+ </div>
 
 
 
 
 
+ <script>
+     function Function(string,button) {
+         let x = document.getElementById(string);
+         if (x.style.display === "none") {
+             x.style.display = "block";
+         }
+         let y =document.getElementById(button);
+         y.style.display = "none";
 
+     }
+ </script>
 
+ </body>
+ </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<span style='background-color: #FCB81D'>Text</span>
-
-
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <style>
-
-      div a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-
-        display:inline-block;
-      }
-      ul {
-        display: inline;
-        margin: 0;
-        padding: 0;
-      }
-      ul li {display: inline-block;}
-      ul li {background: yellow;}
-      ul li:hover ul {display: block;}
-      ul li ul {
-        position: absolute;
-        width: 200px;
-        display: none;
-      }
-      ul li ul li {
-        background: white ;
-        display: block;
-      }
-      ul li ul li a {display:block !important;}
-      ul li ul li:hover {background: white;}
-    </style>
-  </head>
-  <body>
-
-  <div>
-    <a href="#">Useless Link</a>
-    <ul>
-      <li>
-        <a href="#">Dropdown Link</a>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  </body>

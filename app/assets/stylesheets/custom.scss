@@ -35,10 +35,7 @@
   /*background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);*/
 }
 
-.container {
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
+
 
 .carousel{
   background: #337ab7;
@@ -293,22 +290,19 @@ div a {
 
   display:inline-block;
 }
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
+
+div.container {
+  line-height: 170%;
+  font-size: 15px;
 }
-ul li {display: inline-block;}
-ul li {background: yellow;}
-ul li:hover ul {display: block;}
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
+
+.btn-link {
+  font-size: 16px;
+  color: #FCF8E3;
 }
-ul li ul li {
-  background: white ;
-  display: block;
+
+
+.btn-warning {
+  color: black;
 }
-ul li ul li a {display:block !important;}
-ul li ul li:hover {background: white;}
+
