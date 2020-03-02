@@ -1,24 +1,40 @@
 
+hit f5 key pls
 
-<!DOCTYPE html>
-<html lang="en">
+
+
 <head>
-
+  <title>something</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+      $(document).ready( function(){
+
+          $('.btn-warning').tooltip({title: "...", trigger: "click"});
+      });
+  </script>
+
+
+
 </head>
 <body>
 
+
+
+
+
 <div class="container">
-    <p1>
+
+
       Spomedzi množstva vecí, ktoré goja dokáže liečiť, vás zrejme zaujmú jej silné protirakovinové účinky. Mužom,
-      ktorý toto jej využitie pri liečbe rakoviny objavil, sa volá  <button type="button" class="btn-warning" data-placement="bottom" title="Dr. Frank Shallenberger je americký doktor s pochybnou povesťou, ktorý sa venuje alternatívnej medicíne. Prišiel olicenciu vo viacerých štátoch USA a bol súdený za hrubu nedbanlivost pri vykonavani prace">Dr. Frank Shallenberger </button>
+      ktorý toto jej využitie pri liečbe rakoviny objavil, sa volá  <button type="button" id="but1" class="btn-warning" onclick="Log(this,'but1')" data-placement="bottom" title="Dr. Frank Shallenberger je americký doktor s pochybnou povesťou, ktorý sa venuje alternatívnej medicíne. Prišiel olicenciu vo viacerých štátoch USA a bol súdený za hrubu nedbanlivost pri vykonavani prace">Dr. Frank Shallenberger </button>
       Špecializuje sa na alternatívnu medicínu aterapie zamerané na potláčanie známok predčasného starnutia. Ako uvádza,
       táto rastlina dokáže potlačiť rozvoj arast rakovinových buniek, preto ju často odporúča konzumovať aj svojim pacientom,
-      ktorí trpia na onkologické ochorenia. Podľa štúdií, <button type="button" class="btn-warning" data-placement="bottom" title="Goji ma priaznive ucinky na organizmus, no nie je to vsak zazracna rastlina">gója, respektíve horký melón, usmrcuje 90 až 98% rakovinových buniek,</button>
-      ktoré sa vytvoria vľudskom tele. Ide naozaj ovskutku ohromujúcu informáciu. <button type="button" class="btn-warning" data-placement="bottom" title="Tento vyzkum nie je nikde zverejneny">Univerzita  v Coloráde uskutočnila štúdiu,
+      ktorí trpia na onkologické ochorenia. Podľa štúdií, <button type="button" id="but2" class="btn-warning" onclick="Log(this,'but2')" data-placement="bottom" title="Goji ma priaznive ucinky na organizmus, no nie je to vsak zazracna rastlina">gója, respektíve horký melón, usmrcuje 90 až 98% rakovinových buniek,</button>
+      ktoré sa vytvoria vľudskom tele. Ide naozaj ovskutku ohromujúcu informáciu. <button type="button" id="but3" class="btn-warning" onclick="Log(this,'but3')" data-placement="bottom" title="Tento vyzkum nie je nikde zverejneny">Univerzita  v Coloráde uskutočnila štúdiu,
       ktorá skúmala účinky góje na ľudský organizmus, zvlášť na rakovinu.</button> Zistila, že už pri 5% koncentrácii dokázala zneškodniť
       takmer 64% buniek rakoviny pankreasu.Zdravotné účinky góje na telo, kožné infekcie, vysoký krvný tlak, astmu,
       žalúdočné atráviace ťažkosti, príznaky a prejavy cukrovky typu 2Začlenením góje do vášho jedálnička dokážete pozitívne
@@ -30,15 +46,27 @@
       Zmierňuje totiž príznaky po-alkoholickej opice anavyše čistí aregeneruje pečeň. Napokon, na nezaplatenie sú aj účinky
       góje pri podpore trávenia, zmierňovaní dny, podpore cirkulácie krvi aliečení kožných problémov ako sú psoriáza, mykózyčiatletická noha.
 
-    </p1>
 
 </div>
 
-<script>
-    $(document).ready(function(){
-        $('.btn-warning').tooltip({title: "...", trigger: "click"});
-    });
+<script type="text/javascript">
+    function Log(element, id) {
+
+            let rect = element.getBoundingClientRect();
+        $.ajax({
+            type: "POST",
+            url: "/logs",
+            data: {log: {subject_id: <%=return_subject_id %>, button_name: id, position_x: rect.x, position_y: rect.y}},
+            success: function(
+
+            ){
+
+            }
+        });
+    }
 </script>
 
 </body>
-</html>
+
+
+

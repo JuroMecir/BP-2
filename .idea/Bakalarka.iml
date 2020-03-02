@@ -99,6 +99,7 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.0.1, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, ruby-2.5.3-p105 (2)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tooltipster-rails (v4.2.7, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.1, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.6, ruby-2.5.3-p105 (2)) [gem]" level="application" />
@@ -109,6 +110,9 @@
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.4, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.1.7, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, ruby-2.5.3-p105 (2)) [gem]" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

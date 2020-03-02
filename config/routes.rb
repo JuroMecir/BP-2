@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
 
+  resources :logs
   get '/article1', to: 'articles#article1'
   get '/form11', to: 'forms#form11'
   get '/form12', to: 'forms#form12'
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   get '/explanation1', to:'articles#explanation1'
   get '/explanation2', to:'articles#explanation2'
   post '/subjects/new', to:'subjects#create'
+  post '/logs/new', to:'logs#create'
   delete '/logout',  to: 'sessions#destroy'
   root 'application#application'
 
