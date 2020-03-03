@@ -14,10 +14,12 @@ Rails.application.routes.draw do
   get '/form52', to: 'forms#form52'
   get '/explanation1', to:'articles#explanation1'
   get '/explanation2', to:'articles#explanation2'
+  get '/explanation3', to:'articles#explanation3'
+
   post '/subjects/new', to:'subjects#create'
   post '/logs/new', to:'logs#create'
   delete '/logout',  to: 'sessions#destroy'
-  root 'application#application'
+  root 'subjects#new'
 
   resources :subjects
 end

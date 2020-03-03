@@ -27892,3 +27892,1569 @@ No template found for LogsController#create, rendering head :no_content
 Completed 204 No Content in 1471ms (ActiveRecord: 4.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-03 14:34:10 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 1703ms (Views: 1680.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2020-03-03 14:34:18 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (31.8ms)
+  Rendered subjects/new.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 280ms (Views: 221.4ms | ActiveRecord: 15.1ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2020-03-03 14:34:19 +0100
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d6wsWRiueecqZLYzp/PXY6wgXC6hS7kSoTmMi5BtqYN5cu8ZGUWfFaSmIvFgkoVOJuWUZCiyIcoWyJFU6WgwbA==", "commit"=>"Vytvor môj účet"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[36mSubject Create (2.0ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-03-03 13:34:19.938462"], ["updated_at", "2020-03-03 13:34:19.938462"]]
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:34
+Redirected to http://127.0.0.1:3000/subjects/6
+Completed 302 Found in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/subjects/6" for 127.0.0.1 at 2020-03-03 14:34:19 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSubject Load (1.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 225ms (Views: 158.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 14:34:21 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 175ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form11" for 127.0.0.1 at 2020-03-03 14:34:23 +0100
+Processing by FormsController#form11 as HTML
+  Rendering forms/form11.html.erb within layouts/application
+  Rendered forms/form11.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 212ms (Views: 192.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation1" for 127.0.0.1 at 2020-03-03 14:34:24 +0100
+Processing by ArticlesController#explanation1 as HTML
+  Rendering articles/explanation1.html.erb within layouts/application
+  Rendered articles/explanation1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 184ms (Views: 165.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form12" for 127.0.0.1 at 2020-03-03 14:34:26 +0100
+Processing by FormsController#form12 as HTML
+  Rendering forms/form12.html.erb within layouts/application
+  Rendered forms/form12.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 177ms (Views: 159.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 14:34:28 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 178ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 14:34:31 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 168ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 16:28:41 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 403ms (Views: 380.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 16:29:14 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 179ms (Views: 161.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 16:29:17 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 173ms (Views: 155.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 19:39:33 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1571ms (Views: 1550.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 19:42:01 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 177ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 19:42:04 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 191ms (Views: 170.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:42:37 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 169ms (Views: 150.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:43:46 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 162ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:44:54 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 985ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (identifier '(function(opts, pluginOpts) {return eval(process' undefined):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+(execjs):1
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__166674994_80260340'
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:45:26 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (identifier '(function(opts, pluginOpts) {return eval(process' undefined):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+(execjs):1
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__166674994_50507240'
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:47:16 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1427ms (Views: 1406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:50:22 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 179ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:50:56 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 160ms (Views: 142.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:51:19 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 158ms (Views: 139.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:51:34 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 160ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:51:50 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 159ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:52:10 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 171ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:52:15 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 156ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:52:19 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 152ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:53:12 +0100
+Processing by ApplicationController#application as HTML
+  Rendering application/application.html.erb within layouts/application
+  Rendered application/application.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 161ms (Views: 142.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:53:57 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (28.7ms)
+  Rendered subjects/new.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 268ms (Views: 217.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 19:54:35 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.3ms)
+  Rendered subjects/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 212ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:00:33 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.5ms)
+  Rendered subjects/new.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 219ms (Views: 200.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:02:09 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.8ms)
+  Rendered subjects/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 211ms (Views: 191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:03:54 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (20.5ms)
+  Rendered subjects/new.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 212ms (Views: 193.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:04:21 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.2ms)
+  Rendered subjects/new.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 214ms (Views: 196.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:05:01 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.9ms)
+  Rendered subjects/new.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 221ms (Views: 202.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:05:08 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.2ms)
+  Rendered subjects/new.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 215ms (Views: 196.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:05:20 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered subjects/_form.html.erb (19.2ms)
+  Rendered subjects/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 212ms (Views: 193.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:05:27 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.6ms)
+  Rendered subjects/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 215ms (Views: 196.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:05:54 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.0ms)
+  Rendered subjects/new.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 219ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:06:07 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered subjects/_form.html.erb (19.0ms)
+  Rendered subjects/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 248ms (Views: 230.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:06:17 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.7ms)
+  Rendered subjects/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 211ms (Views: 192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:06:34 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.6ms)
+  Rendered subjects/new.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 212ms (Views: 193.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:06:40 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (20.3ms)
+  Rendered subjects/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 218ms (Views: 199.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:09:03 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (18.7ms)
+  Rendered subjects/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 6140ms (Views: 6121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:09:37 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered subjects/_form.html.erb (20.6ms)
+  Rendered subjects/new.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 213ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:10:02 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered subjects/_form.html.erb (20.2ms)
+  Rendered subjects/new.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 211ms (Views: 192.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:10:08 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (19.4ms)
+  Rendered subjects/new.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 218ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2020-03-03 20:10:11 +0100
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3xXwurZXykMuoPF2hYRl4GO+hv5Dty2g24xjIxq4VX0ibs1MrGqYO8agDDc0u+Z/wL43hiPVAl7joH5CGT23A==", "commit"=>"Pokracuj"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[36mSubject Create (1.5ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-03-03 19:10:11.818528"], ["updated_at", "2020-03-03 19:10:11.818528"]]
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:34
+Redirected to http://127.0.0.1:3000/subjects/7
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:10:11 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (1.7ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 211ms (Views: 154.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:11:36 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 171ms (Views: 152.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:12:00 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 189ms (Views: 170.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:12:10 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 175ms (Views: 155.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:12:20 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 172ms (Views: 152.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:12:30 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 174ms (Views: 154.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:13:41 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 187ms (Views: 168.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:14:08 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 175ms (Views: 157.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:14:16 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 172ms (Views: 153.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:15:09 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.9ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 191ms (Views: 170.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:15:36 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 174ms (Views: 156.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:16:06 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 173ms (Views: 154.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:16:13 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 191ms (Views: 172.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:16:20 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 183ms (Views: 164.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:16:27 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 165ms (Views: 146.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:17:35 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 184ms (Views: 165.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:17:48 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 175ms (Views: 156.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:17:59 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 180ms (Views: 159.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:18:33 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 177ms (Views: 157.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:18:44 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 182ms (Views: 163.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:18:55 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 184ms (Views: 164.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:20:51 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 174ms (Views: 155.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:21:11 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 203ms (Views: 183.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:21:20 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 173ms (Views: 153.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:21:34 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 170ms (Views: 150.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:21:38 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 172ms (Views: 153.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:22:35 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 180ms (Views: 158.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:23:31 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 165ms (Views: 147.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:24:29 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 171ms (Views: 152.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:24:33 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 188ms (Views: 170.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:25:38 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 165ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:25:45 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 169ms (Views: 150.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:26:01 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 181ms (Views: 162.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:26:09 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 168ms (Views: 149.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:26:42 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 170ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:26:53 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 178ms (Views: 160.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:27:19 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 189ms (Views: 170.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:27:40 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 168ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:29:53 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 174ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:29:56 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 176ms (Views: 153.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:30:40 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 176ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:31:30 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 173ms (Views: 154.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:31:43 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 188ms (Views: 170.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:32:42 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 181ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form11" for 127.0.0.1 at 2020-03-03 20:32:44 +0100
+Processing by FormsController#form11 as HTML
+  Rendering forms/form11.html.erb within layouts/application
+  Rendered forms/form11.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 202ms (Views: 182.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:34:32 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4781ms (Views: 4762.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2020-03-03 20:34:41 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 193ms (Views: 173.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 20:35:01 +0100
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered subjects/_form.html.erb (22.5ms)
+  Rendered subjects/new.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 4967ms (Views: 4948.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2020-03-03 20:35:08 +0100
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wEQABnMx97+9qefuGHdqzRkkngSBNBNpwUahAeT+Zczzsezxq1kC9l4J5Bses5TDZ6icwWC1m9Y5phF0YPByRQ==", "commit"=>"Pokracuj"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[36mSubject Create (0.6ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-03-03 19:35:08.621327"], ["updated_at", "2020-03-03 19:35:08.621327"]]
+  ↳ app/controllers/subjects_controller.rb:34
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:34
+Redirected to http://127.0.0.1:3000/subjects/8
+Completed 302 Found in 12ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/subjects/8" for 127.0.0.1 at 2020-03-03 20:35:08 +0100
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:72
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 187ms (Views: 168.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/article1" for 127.0.0.1 at 2020-03-03 20:35:15 +0100
+Processing by ArticlesController#article1 as HTML
+  Rendering articles/article1.html.erb within layouts/application
+  Rendered articles/article1.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 181ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form11" for 127.0.0.1 at 2020-03-03 20:35:19 +0100
+Processing by FormsController#form11 as HTML
+  Rendering forms/form11.html.erb within layouts/application
+  Rendered forms/form11.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 175ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form11" for 127.0.0.1 at 2020-03-03 20:37:31 +0100
+Processing by FormsController#form11 as HTML
+  Rendering forms/form11.html.erb within layouts/application
+  Rendered forms/form11.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 177ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form11" for 127.0.0.1 at 2020-03-03 20:37:40 +0100
+Processing by FormsController#form11 as HTML
+  Rendering forms/form11.html.erb within layouts/application
+  Rendered forms/form11.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 175ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation1" for 127.0.0.1 at 2020-03-03 20:37:44 +0100
+Processing by ArticlesController#explanation1 as HTML
+  Rendering articles/explanation1.html.erb within layouts/application
+  Rendered articles/explanation1.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 172ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation1" for 127.0.0.1 at 2020-03-03 20:38:54 +0100
+Processing by ArticlesController#explanation1 as HTML
+  Rendering articles/explanation1.html.erb within layouts/application
+  Rendered articles/explanation1.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 171ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form12" for 127.0.0.1 at 2020-03-03 20:39:23 +0100
+Processing by FormsController#form12 as HTML
+  Rendering forms/form12.html.erb within layouts/application
+  Rendered forms/form12.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 169ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form12" for 127.0.0.1 at 2020-03-03 20:40:15 +0100
+Processing by FormsController#form12 as HTML
+  Rendering forms/form12.html.erb within layouts/application
+  Rendered forms/form12.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 184ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:40:34 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 175ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:37 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:37.928932"], ["updated_at", "2020-03-03 19:40:37.928932"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:38 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:38 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:38 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (2.6ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:39.031909"], ["updated_at", "2020-03-03 19:40:39.031909"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (8.1ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:39.279773"], ["updated_at", "2020-03-03 19:40:39.279773"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:40:39 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (4.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (10.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:40.107979"], ["updated_at", "2020-03-03 19:40:40.107979"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2367ms (ActiveRecord: 14.5ms)
+
+
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1397ms (Views: 1360.2ms | ActiveRecord: 0.0ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4568ms (ActiveRecord: 23.3ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4535ms (ActiveRecord: 19.3ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:43 +0100
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4033ms (ActiveRecord: 25.7ms)
+
+
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:44.171069"], ["updated_at", "2020-03-03 19:40:44.171069"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:40:44 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"104.80000305175781"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.8ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "104.80000305175781"], ["created_at", "2020-03-03 19:40:44.739994"], ["updated_at", "2020-03-03 19:40:44.739994"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2302ms (ActiveRecord: 9.9ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2352ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:41:47 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 178ms (Views: 158.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:42:16 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 179ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:42:32 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 219ms (Views: 199.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:34 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"154"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "154"], ["created_at", "2020-03-03 19:42:34.146776"], ["updated_at", "2020-03-03 19:42:34.146776"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:34 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"198", "position_y"=>"154"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "198"], ["position_y", "154"], ["created_at", "2020-03-03 19:42:34.832111"], ["updated_at", "2020-03-03 19:42:34.832111"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:35 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:35 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"198", "position_y"=>"209.60000610351562"}}
+  [1m[35m (8.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (8.8ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "198"], ["position_y", "209.60000610351562"], ["created_at", "2020-03-03 19:42:35.876287"], ["updated_at", "2020-03-03 19:42:35.876287"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:36 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"198", "position_y"=>"209.60000610351562"}}
+  [1m[35m (16.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+  [1m[36mLog Create (17.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "198"], ["position_y", "209.60000610351562"], ["created_at", "2020-03-03 19:42:36.806423"], ["updated_at", "2020-03-03 19:42:36.806423"]]
+Completed 204 No Content in 2687ms (ActiveRecord: 1.2ms)
+
+
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:42:37 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"198", "position_y"=>"240.40000915527344"}}
+  [1m[35m (11.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (12.8ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "198"], ["position_y", "240.40000915527344"], ["created_at", "2020-03-03 19:42:37.496645"], ["updated_at", "2020-03-03 19:42:37.496645"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"198", "position_y"=>"240.40000915527344"}}
+  [1m[35m (21.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (16.2ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "198"], ["position_y", "240.40000915527344"], ["created_at", "2020-03-03 19:42:38.922187"], ["updated_at", "2020-03-03 19:42:38.922187"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (23.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4461ms (ActiveRecord: 5.2ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 5259ms (ActiveRecord: 28.6ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 5208ms (ActiveRecord: 47.5ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4881ms (ActiveRecord: 39.7ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3810ms (ActiveRecord: 60.6ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:43:42 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"178.8000030517578"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "178.8000030517578"], ["created_at", "2020-03-03 19:43:42.458141"], ["updated_at", "2020-03-03 19:43:42.458141"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1449ms (ActiveRecord: 1.1ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:43:50 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"178.8000030517578"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "178.8000030517578"], ["created_at", "2020-03-03 19:43:50.986572"], ["updated_at", "2020-03-03 19:43:50.986572"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1772ms (ActiveRecord: 16.1ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:44:13 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"0", "position_y"=>"284"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "0"], ["position_y", "284"], ["created_at", "2020-03-03 19:44:13.127192"], ["updated_at", "2020-03-03 19:44:13.127192"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:44:13 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"0", "position_y"=>"339.6000061035156"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "0"], ["position_y", "339.6000061035156"], ["created_at", "2020-03-03 19:44:14.124759"], ["updated_at", "2020-03-03 19:44:14.124759"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2071ms (ActiveRecord: 3.6ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2059ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:45:30 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 180ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:32 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:45:32.608966"], ["updated_at", "2020-03-03 19:45:32.608966"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:33 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (6.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:45:33.412481"], ["updated_at", "2020-03-03 19:45:33.412481"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1980ms (ActiveRecord: 1.0ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1980ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:45:47 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 171ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:50 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:45:50.200211"], ["updated_at", "2020-03-03 19:45:50.200211"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:50 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:45:51.100364"], ["updated_at", "2020-03-03 19:45:51.100364"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2029ms (ActiveRecord: 10.2ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:52 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"0", "position_y"=>"152.8000030517578"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (6.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "0"], ["position_y", "152.8000030517578"], ["created_at", "2020-03-03 19:45:52.609803"], ["updated_at", "2020-03-03 19:45:52.609803"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:53 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:53 +0100
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2565ms (ActiveRecord: 6.4ms)
+
+
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"0", "position_y"=>"152.8000030517578"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "0"], ["position_y", "152.8000030517578"], ["created_at", "2020-03-03 19:45:53.697642"], ["updated_at", "2020-03-03 19:45:53.697642"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:45:53 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"0", "position_y"=>"208.40000915527344"}}
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (9.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "0"], ["position_y", "208.40000915527344"], ["created_at", "2020-03-03 19:45:54.279403"], ["updated_at", "2020-03-03 19:45:54.279403"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"0", "position_y"=>"208.40000915527344"}}
+  [1m[35m (9.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (9.6ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "0"], ["position_y", "208.40000915527344"], ["created_at", "2020-03-03 19:45:54.993334"], ["updated_at", "2020-03-03 19:45:54.993334"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (18.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3886ms (ActiveRecord: 8.8ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4471ms (ActiveRecord: 9.7ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4405ms (ActiveRecord: 25.1ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3960ms (ActiveRecord: 37.4ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:46:59 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 178ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:03 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:47:03.818680"], ["updated_at", "2020-03-03 19:47:03.818680"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:04 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.7ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:47:04.989084"], ["updated_at", "2020-03-03 19:47:04.989084"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1811ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:47:05 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 437ms (Views: 416.7ms | ActiveRecord: 0.0ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2505ms (ActiveRecord: 10.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:07 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:47:07.954684"], ["updated_at", "2020-03-03 19:47:07.954684"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:08 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:08 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (6.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:47:08.746333"], ["updated_at", "2020-03-03 19:47:08.746333"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but1", "position_x"=>"0", "position_y"=>"47.60000228881836"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (2.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but1"], ["position_x", "0"], ["position_y", "47.60000228881836"], ["created_at", "2020-03-03 19:47:09.168417"], ["updated_at", "2020-03-03 19:47:09.168417"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2802ms (ActiveRecord: 4.9ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3338ms (ActiveRecord: 15.5ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3205ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:47:16 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 183ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:18 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"0", "position_y"=>"152.8000030517578"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "0"], ["position_y", "152.8000030517578"], ["created_at", "2020-03-03 19:47:18.767971"], ["updated_at", "2020-03-03 19:47:18.767971"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:47:19 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"0", "position_y"=>"152.8000030517578"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.1ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "0"], ["position_y", "152.8000030517578"], ["created_at", "2020-03-03 19:47:19.416518"], ["updated_at", "2020-03-03 19:47:19.416518"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2317ms (ActiveRecord: 1.2ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2290ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:48:44 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 176ms (Views: 157.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:50:09 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4837ms (Views: 4813.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:51:08 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 171ms (Views: 152.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:51:26 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"189.60000610351562", "position_y"=>"407.3999938964844"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "189.60000610351562"], ["position_y", "407.3999938964844"], ["created_at", "2020-03-03 19:51:26.935938"], ["updated_at", "2020-03-03 19:51:26.935938"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:51:27 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"189.60000610351562", "position_y"=>"407.3999938964844"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "189.60000610351562"], ["position_y", "407.3999938964844"], ["created_at", "2020-03-03 19:51:27.888991"], ["updated_at", "2020-03-03 19:51:27.888991"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:51:28 +0100
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:51:28 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"189.60000610351562", "position_y"=>"376.6000061035156"}}
+  [1m[35m (8.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (4.7ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "189.60000610351562"], ["position_y", "376.6000061035156"], ["created_at", "2020-03-03 19:51:28.734218"], ["updated_at", "2020-03-03 19:51:28.734218"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2380ms (ActiveRecord: 2.4ms)
+
+
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but2", "position_x"=>"189.60000610351562", "position_y"=>"376.6000061035156"}}
+  [1m[35m (10.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (3.7ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but2"], ["position_x", "189.60000610351562"], ["position_y", "376.6000061035156"], ["created_at", "2020-03-03 19:51:29.351598"], ["updated_at", "2020-03-03 19:51:29.351598"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-03-03 20:51:29 +0100
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"8", "button_name"=>"but3", "position_x"=>"189.60000610351562", "position_y"=>"407.3999938964844"}}
+  [1m[35m (5.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (6.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "8"], ["button_name", "but3"], ["position_x", "189.60000610351562"], ["position_y", "407.3999938964844"], ["created_at", "2020-03-03 19:51:30.908604"], ["updated_at", "2020-03-03 19:51:30.908604"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4144ms (ActiveRecord: 10.9ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4342ms (ActiveRecord: 24.2ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 4146ms (ActiveRecord: 26.1ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3197ms (ActiveRecord: 20.2ms)
+
+
+Started GET "/explanation2" for 127.0.0.1 at 2020-03-03 20:51:37 +0100
+Processing by ArticlesController#explanation2 as HTML
+  Rendering articles/explanation2.html.erb within layouts/application
+  Rendered articles/explanation2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 226ms (Views: 206.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:51:46 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 177ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:53:04 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 176ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:53:22 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 204ms (Views: 184.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:54:09 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 177ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:55:54 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 175ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:56:01 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 193ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:57:06 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 180ms (Views: 162.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/explanation3" for 127.0.0.1 at 2020-03-03 20:57:56 +0100
+Processing by ArticlesController#explanation3 as HTML
+  Rendering articles/explanation3.html.erb within layouts/application
+  Rendered articles/explanation3.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 192ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+

@@ -7,7 +7,9 @@
   background-color: #efefef;
   text-align: center;
 }
-
+p {
+  font-size: 16px;
+}
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -15,6 +17,11 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 30%;
+}
+
+#anchor{
+  position: fixed;
+  bottom: 0px;
 }
 
 [class*="footer1"] {
@@ -71,7 +78,7 @@ tr:nth-child(even) {
 }
 
 div{
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 
 }
 
