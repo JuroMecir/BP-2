@@ -45,7 +45,6 @@
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.12, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.5, ruby-2.5.3-p105 (2)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.0.0, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.7, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-will_paginate (v1.0.0, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, ruby-2.5.3-p105 (2)) [gem]" level="application" />
@@ -81,7 +80,6 @@
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.2, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.7, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.2, ruby-2.5.3-p105 (2)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.14.5, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.3, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.2, ruby-2.5.3-p105 (2)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.1.2, ruby-2.5.3-p105 (2)) [gem]" level="application" />
