@@ -1,13 +1,194 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<h1> <--Disclaimer--> </h1>
+<script>
+    $(document).ready( function(){
+        $('.btn-warning').tooltip({title: "...", trigger: "click"});
+    });
+</script>
 
-<div class="row" >
-  <div class="container">
-    <p1>
-      Prečo je nezmysel: Dr. Frank Shallenberger – americký doktor spochybnou povesťou, ktorý sa venuje alternatívnej medicíne. Prišiel olicenciu vo viacerých štátoch USA a bol súdený (http://faculty.uml.edu/sgallagher/california_medical_board_case_ag.htm).  Výskum zuniverzity sa mi nepodarilo nájsť.Samotný názov rastliny je uvedený zle – správne je goji. Podľa článkov má priaznivé účinky na organizmus, ale nie je to zázračná rastlina (https://recipes.howstuffworks.com/goji-berry6.htm).
-    </p1>
-  </div>
-</div >
+<script>
+    function Function(element,string,button) {
+        let x = document.getElementById(string);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+        let y =document.getElementById(button);
+        y.style.display = "none";
+        Log(element,string);
+
+    }
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+    function Log(element, id) {
+
+        let rect = element.getBoundingClientRect();
+        $.ajax({
+            type: "POST",
+            url: "/logs",
+            data: {log: {subject_id: <%=return_subject_id %>, button_name: id, position_x: rect.x, position_y: rect.y}},
+            success: function(
+
+            ){
+
+            }
+        });
+    }
+</script>
+
+
+
+
+
+<% if return_subject_id % 3 == 1 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+        <ul>
+          <li>Kyselina L-Askorbová je odborný názov pre vitamín C.</li>
+          <li>Vitamín C získaný z geneticky modifikovaných rastlín je rovnaký ako prírodný vitamín C.</li>
+          <li>Kyslá forma vitamínu C neexistuje.</li>
+          <li>Umelý a prírodný vitamín C sú identické.</li>
+          <li>Umelo vytvorený vitamín C neničí črevnú mikroflóru, pretože umelý a prírodný vitamín C sú identické.</li>
+          <li>Bioflavodoidy, teda správne bioflavonoidy, askorbáty a kyselina D-isoaskorbvá nie sú súčasťou vitamínu C.</li>
+        </ul>
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+<% if return_subject_id % 3 == 0 %>
+
+      <div class="row" >
+        <div  style="width:50%; background:#F0F8FF" class="container" >
+
+          <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
+
+          <p> Je známy autor tohto článku?</p>
+          <center>
+            <button id='authorknownbutton'   class="btn btn-outline-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
+            <button id='authornotknownbutton' class="btn btn-outline-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
+          </center>
+
+
+          <div id="authorknown" style="display:none" >
+            <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
+
+            <p>Vyvoláva v tebe článok strach?</p>
+
+            <center>
+              <button id='scarybutton' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
+              <button id='notscarybutton' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
+            </center>
+          </div>
+
+          <div id="authornotknown" style="display:none" >
+            <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
+
+            <p>Vyvoláva v tebe článok strach?</p>
+
+            <center>
+              <button id='scarybutton1' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
+              <button id='notscarybutton1' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
+            </center>
+          </div>
+
+
+
+          <div id="notscary" style="display:none" >
+            <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
+            <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+            <center>
+              <button id="hatredbutton" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
+              <button id="nohatredbutton" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
+            </center>
+          </div>
+
+
+          <div id="scary" style="display:none" >
+            <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
+
+            <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+            <center>
+              <button id="hatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
+              <button id="nohatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
+            </center>
+
+          </div>
+
+          <div id="nohatred" style="display:none" >
+            <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
+            <p>Dáva článok priestor protistrane?</p>
+            <center>
+              <button id="counterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
+              <button id="nocounterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
+            </center>
+          </div>
+
+          <div id="hatred" style="display:none" >
+            <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
+            <p>Dáva článok priestor protistrane?</p>
+            <center>
+              <button id="counterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
+              <button id="nocounterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
+            </center>
+          </div>
+
+          <div id="counterparty" style="display:none" >
+            <p>Seriózne médium dá vždy priestor protistrane.</p>
+
+
+
+          </div>
+
+
+          <div id="nocounterparty" style="display:none" >
+            <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
+            <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
+
+
+            <center>
+              <%= link_to '  Pokračujte ', form12_path, class: "btn btn-primary"%>
+            </center>
+
+
+          </div>
+        </div>
+      </div>
+<%end %>
+
+
+<% if return_subject_id % 3 == 2 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+
+        Bioflavodoidy, teda správne bioflavonoidy, askorbáty a kyselina D-isoaskorbvá nie sú súčasťou vitamínu C.
+
+        Väčšina predávaných <button type="button" id="vitcgenup" class="btn-warning" onclick="Log(this,'vitcgenup')" data-placement="bottom" title="Vitamín C získaný z geneticky modifikovaných rastlín je rovnaký ako prírodný vitamín C.">doplnkov vitamínu C pochádza z geneticky modifikovaných plodín.</button>
+        Výrobcovia na ich výrobu najčastejšie používajú genetický modifikovanú kukuricu.
+        <button type="button" id="vitc=kyslask" class="btn-warning" onclick="Log(this,'vitc=kyslask')" data-placement="bottom" title="Kyselina L-askorbová je odborný názov pre vitamín C.">Nejde však o prírodný vitamín C, ale o kyselinu askorbovú</button>, ktorá sa získava chemickou premenou cukru.
+        Zistilo sa však, že táto <button type="button" id="vitckysform" class="btn-warning" onclick="Log(this,'vitckysform')" data-placement="bottom" title="Nič ako kyslá forma vitamínu C neexistuje, pretože umelý a prírodný vitamín C sú identické. Vitamín C neničí črevnú mikroflóru"> kyslá forma vitamínu C preukázateľne ničí prospešnú črevnú mikroflóru</button>
+        a dokonca môže potlačiť imunitný systém namiesto toho, aby ho posilnila.
+
+
+         <button type="button" id="vitcjekysask" class="btn-warning" onclick="Log(this,'vitcjekysask')" data-placement="bottom" title=" Prírodný vitamín C je kyselina L-Askorbová. Bioflavodoidy, teda správne bioflavonoidy, askorbáty a kyselina D-isoaskorbvá nie sú súčasťou vitamínu C."> Prírodný vitamín C totiž nie je len kyselina askorbová</button>, ale obsahuje aj zložky ako askorbáty
+        (vápenatý, sodný, horečnatý, draselý, zinočnatý a podobne), ďalej askorbyl palmitát či kyselinu D-isoaskorbvú.
+        Za súčasť prírodného vitamínu C sa často považujú aj takzvané bioflavodoidy, ktoré zvyšujú jeho účinnosť v organizme.
+
+
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+
 <center>
   <%= link_to '  Pokračujte ', form12_path, class: "btn btn-primary"%>
 </center>

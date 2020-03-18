@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :logs
   get '/article1', to: 'articles#article1'
+  get '/article2', to: 'articles#article2'
+  get '/article3', to: 'articles#article3'
+  get '/article4', to: 'articles#article4'
+  get '/article5', to: 'articles#article5'
   get '/form11', to: 'forms#form11'
   get '/form12', to: 'forms#form12'
   get '/form2', to: 'forms#form2'
@@ -13,7 +17,7 @@ Rails.application.routes.draw do
   get '/form51', to: 'forms#form51'
   get '/form52', to: 'forms#form52'
   get '/explanation1', to:'articles#explanation1'
-  get '/explanation2', to:'articles#explanation2'
+  get '/explanation5', to:'articles#explanation5'
   get '/explanation3', to:'articles#explanation3'
 
   post '/subjects/new', to:'subjects#create'

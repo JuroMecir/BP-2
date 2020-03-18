@@ -1,0 +1,189 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready( function(){
+        $('.btn-warning').tooltip({title: "...", trigger: "click"});
+    });
+</script>
+
+<script>
+    function Function(element,string,button) {
+        let x = document.getElementById(string);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+        let y =document.getElementById(button);
+        y.style.display = "none";
+        Log(element,string);
+
+    }
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+    function Log(element, id) {
+
+        let rect = element.getBoundingClientRect();
+        $.ajax({
+            type: "POST",
+            url: "/logs",
+            data: {log: {subject_id: <%=return_subject_id %>, button_name: id, position_x: rect.x, position_y: rect.y}},
+            success: function(
+
+            ){
+
+            }
+        });
+    }
+</script>
+
+
+
+
+
+<% if return_subject_id % 3 == 2 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+        <ul>
+          <li> Vedecká štúdia na ktorú sa autor odkazuje nebola nájdená. </li>
+          <li> K darovaniu orgánov dochádza až po definitívnej a nezvratnej smrti pacienta. </li>
+          <li> Pacient sa vyhlasuje za mŕtveho na základe smrti mozgu - zániku existencie človeka. </li>
+          <li> Pri odoberaní orgánov sú pacienti mozgovo mŕtvy, teda nemôžu nič cítiť. </li>
+        </ul>
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+
+
+<% if return_subject_id % 3 == 0 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+        Ak ste darca orgánu, možno ste si to postavenie vybrali z dobrej vôle, nazdávajúc sa, že vám lekársky personál neodoberie orgány skôr,
+        ako budete mŕtvi a bez vedomia. <button type="button" id="orgstudy" class="btn-warning" onclick="Log(this,'orgstudy')" data-placement="bottom" title="Vedecká štúdia na ktorú sa autor odkazuje nebola nájdená."> Nová vedecká štúdia</button> však odhaľuje, že k <button type="button" id="orgodob" class="btn-warning" onclick="Log(this,'orgodob')" data-placement="bottom" title="K odoberaniu orgánov dochádza výlučne po mozgovej smrti. Po mozgovej smrti nedokáže pacient nič cítiť, pretože je mŕtvy."> odoberaniu orgánov veľmi pravdepodobne dochádza aj vtedy,
+        keď sú pacienti ešte pri vedomí</button>, hoci ich srdcia už prestali biť. To znamená, že pacienti si plne uvedomujú –
+        a zažívajú všetku bolesť spôsobujúcu lekármi, ktorí sa rýchlo zarezávajú do ich tiel a odoberajú im orgány,
+        aby vytvárali „transplantačné zisky“ pre skorumpovaný zdravotnícky systém.
+        Aj keď vám prestane biť srdce, ste ešte niekoľko minút stále nažive a pri vedomí. Keď vám prestane biť srdce,
+        tak ešte nie ste naozaj mŕtvi, <button type="button" id="orgsteal" class="btn-warning" onclick="Log(this,'orgsteal')" data-placement="bottom" title="K darovaniu orgánov dochádza až po definitívnej a nezvratnej smrti pacienta."> hoci to lekári využívajú na to, aby vás vyhlásili za mŕtveho.</button>
+        „Ľudia, ktorí prežili zástavu srdca, neskôr presne opisovali, čo sa okolo nich dialo po tom, čo im prestali biť srdcia,“
+        povedal Dr. Sam Parnia, výskumník, ktorý skúma vedomie po smrti. Jeho komentáre odvysielali Fox News:Povedal:
+        „Opisujú prizerajúcich sa lekárov a pracujúce sestry, opisujú uvedomovanie si všetkých rozhovorov,
+        všetkých odohrávajúcich sa vizuálnych vecí, ktoré by im inak neboli známe.“Povedané inak, niekoľko minút po tom,
+        čo vám prestane biť srdce, ste stále nažive, pri vedomí a bdelí. Iba to, že vám prestane biť srdce,
+        ešte okamžite nevypína aktivitu mozgu.Malo by to byť zrejmé aj lekárom, ale prehnitý a zlý zdravotný systém tento problém roky prikrášľuje,
+        predstierajúc,<button type="button" id="instadeath" class="btn-warning" onclick="Log(this,'instadeath')" data-placement="bottom" title="K darovaniu orgánov dochádza až po definitívnej a nezvratnej smrti pacienta."> že smrť je okamžitá, že k nej dochádza vo chvíli, keď prestáva biť srdce.</button>„Znamená to,
+        že ste v podstate ´uväznení´ vo svojom mŕtvom tele, so stále fungujúcim mozgom,“ uvádzajú Fox News.
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+<% if return_subject_id % 3 == 1 %>
+
+  <div class="row" >
+    <div  style="width:50%; background:#F0F8FF" class="container" >
+
+      <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
+
+      <p> Je známy autor tohto článku?</p>
+      <center>
+        <button id='authorknownbutton'   class="btn btn-outline-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
+        <button id='authornotknownbutton' class="btn btn-outline-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
+      </center>
+
+
+      <div id="authorknown" style="display:none" >
+        <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
+
+        <p>Vyvoláva v tebe článok strach?</p>
+
+        <center>
+          <button id='scarybutton' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
+          <button id='notscarybutton' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
+        </center>
+      </div>
+
+      <div id="authornotknown" style="display:none" >
+        <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
+
+        <p>Vyvoláva v tebe článok strach?</p>
+
+        <center>
+          <button id='scarybutton1' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
+          <button id='notscarybutton1' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
+        </center>
+      </div>
+
+
+
+      <div id="notscary" style="display:none" >
+        <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
+        <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+        <center>
+          <button id="hatredbutton" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
+          <button id="nohatredbutton" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
+        </center>
+      </div>
+
+
+      <div id="scary" style="display:none" >
+        <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
+
+        <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+        <center>
+          <button id="hatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
+          <button id="nohatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
+        </center>
+
+      </div>
+
+      <div id="nohatred" style="display:none" >
+        <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
+        <p>Dáva článok priestor protistrane?</p>
+        <center>
+          <button id="counterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
+          <button id="nocounterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
+        </center>
+      </div>
+
+      <div id="hatred" style="display:none" >
+        <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
+        <p>Dáva článok priestor protistrane?</p>
+        <center>
+          <button id="counterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
+          <button id="nocounterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
+        </center>
+      </div>
+
+      <div id="counterparty" style="display:none" >
+        <p>Seriózne médium dá vždy priestor protistrane.</p>
+
+
+
+      </div>
+
+
+      <div id="nocounterparty" style="display:none" >
+        <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
+        <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+<%end %>
+<center>
+  <%= link_to '  Pokračujte ', form52_path, class: "btn btn-primary"%>
+</center>

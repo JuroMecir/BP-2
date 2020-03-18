@@ -3,106 +3,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-<div class="row" >
-  <div  style="width:50%; background:#F0F8FF" class="container" >
-
-    <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
-
-     <p> Je známy autor tohto článku?</p>
-    <center>
-      <button id='authorknownbutton'   class="btn btn-outline-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
-      <button id='authornotknownbutton' class="btn btn-outline-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
-    </center>
-
-
-    <div id="authorknown" style="display:none" >
-      <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
-
-      <p>Vyvoláva v tebe článok strach?</p>
-
-      <center>
-        <button id='scarybutton' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
-        <button id='notscarybutton' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
-      </center>
-    </div>
-
-    <div id="authornotknown" style="display:none" >
-      <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
-
-      <p>Vyvoláva v tebe článok strach?</p>
-
-      <center>
-        <button id='scarybutton1' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
-        <button id='notscarybutton1' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
-      </center>
-    </div>
-
-
-
-    <div id="notscary" style="display:none" >
-      <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
-      <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
-      <center>
-        <button id="hatredbutton" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
-        <button id="nohatredbutton" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
-      </center>
-    </div>
-
-
-    <div id="scary" style="display:none" >
-      <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
-
-      <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
-      <center>
-        <button id="hatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
-        <button id="nohatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
-      </center>
-
-    </div>
-
-    <div id="nohatred" style="display:none" >
-      <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
-      <p>Dáva článok priestor protistrane?</p>
-      <center>
-        <button id="counterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
-        <button id="nocounterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
-      </center>
-    </div>
-
-    <div id="hatred" style="display:none" >
-      <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
-      <p>Dáva článok priestor protistrane?</p>
-      <center>
-        <button id="counterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
-        <button id="nocounterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
-      </center>
-    </div>
-
-    <div id="counterparty" style="display:none" >
-      <p>Seriózne médium dá vždy priestor protistrane.</p>
-
-
-
-    </div>
-
-
-    <div id="nocounterparty" style="display:none" >
-      <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
-
-
-
-    </div>
-
-  </div>
-</div>
-
-
+<script>
+    $(document).ready( function(){
+        $('.btn-warning').tooltip({title: "...", trigger: "click"});
+    });
+</script>
 
 <script>
     function Function(element,string,button) {
@@ -137,6 +42,145 @@
 
 
 
-</body>
-</html>
 
+
+<% if return_subject_id % 3 == 1 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+        Najnovším trendom je pitie vody ráno, okamžite po zobudení keď vyjdete z postele. <button type="button" id="vvednep" class="btn-warning" onclick="Log(this,'vednep')" data-placement="bottom" title="Na internete neexistuje štúdia, kde by boli potvrdené nižšie spomenuté účinky vody">Vedci potvrdili</button>, že jej medicínska hodnota je pre naše zdravie absolútnym prínosom.
+        Pitie vody po hneď zobudení je spájané tak s predchádzaním, ako aj priamo s liečbou veľkého množstva ochorení.
+        Medzi ne patria napríklad: Bolesti hlavy, Rôzne telesné bolesti, Artritída, Problémy so srdcom, Epilepsia, Obezita,
+        Tuberkulóza,<button type="button" id="vodarakovina" class="btn-warning" onclick="Log(this,'vodarakovina')" data-placement="bottom" title="Tvrdenie, že voda lieči rakovinu nie je ničím potvrdené. Taktiež v článku nie je uvedené v akom štádiu rakoviny má pacient byť či o aký nádor sa má jednať aby liečba vodou fungovala. "> Rakovina</button>, Meningitída, Ochorenia obličiek, Zvracanie, Gastritída, <button type="button" id="vitc=kyslask" class="btn-warning" onclick="Log(this,'vitc=kyslask')" data-placement="bottom" title="Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.">Cukrovka</button>, Zápcha, Ochorenia maternice, Choroby uší a hrdla.
+        Ako a koľko vody treba ráno vypiť? Pre správne uplatnenie tejto metódy dodržiavajte tri pravidlá.
+        <ul>
+          <li>Po probudení, ešte predtým, než urobíte čokoľvek iné, vypite 4 približne 1,75 dcl poháre vody. Dohromady by ste teda mali vypiť asi 7 dcl (0,7 litra) vody. Zapamätajte si, že ak existuje nejaký dôvod, prečo nemôžete naraz vypiť také množstvo vody, tak začnite s toľko, koľko zvládnete a postupne to zvyšujte až na požadovaných 7 dcl.</li>
+          <li>Snáď netreba ani uvádzať, že piť by ste mali čistú, nebublinkovú vodu. Ak používate tú z vodovodu, nechajte ju cez noc odstáť, aby z nej vyprchal chlór. Ak používate kupovanú vo fľašiach, uprednostníte menej mineralizovanú, aby ste si nazarobili na obličkové kamene. V oboch prípadoch si do vody môžete pridať plátok citrónu, ktorý jej dodá príjemnejšiu chuť.</li>
+          <li>Po vypití vody si umyte zuby a vykonajte zvyšok rannej rutiny osobnej hygieny. Potom čakajte 45 minút predtým, než čokoľvek zjete alebo znova vypijete.Po 45 minútach sa naraňajkujte ako zvyčajne a potom opäť nič nejedzte, ani nepite počas nasledujúcich 2 hodín.</li>
+        </ul>
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+<% if return_subject_id % 3 == 0 %>
+  <div class="row" >
+    <div class="container">
+      <p1>
+        <ul>
+          <li>Na imternete neexistuje vedecká štúdia, ktorá by potvrdzovala liečivé vlastnosti vody v predchádzajúcom článku.</li>
+          <li>Správna hydratácia je prevenciou nízkeho krvného tlaku. Na liečbu vysokého krvného tlaku sa používajú lieky, ktoré odvodňujú organizmus.</li>
+          <li>Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.</li>
+          <li>V článku sa taktiež uvádza voda ako všeliek na rakovinu, pričom článok nerieši v akom štádiu je pacient či
+            aký je to typ rakoviny. Toto tvrdenie nie je ničím podložené a teda je nedôveryhodné.</li>
+        </ul>
+      </p1>
+    </div>
+  </div >
+<%end %>
+
+
+<% if return_subject_id % 3 == 2 %>
+  <div class="row" >
+    <div class="row" >
+      <div  style="width:50%; background:#F0F8FF" class="container" >
+
+        <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
+
+        <p> Je známy autor tohto článku?</p>
+        <center>
+          <button id='authorknownbutton'   class="btn btn-outline-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
+          <button id='authornotknownbutton' class="btn btn-outline-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
+        </center>
+
+
+        <div id="authorknown" style="display:none" >
+          <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
+
+          <p>Vyvoláva v tebe článok strach?</p>
+
+          <center>
+            <button id='scarybutton' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
+            <button id='notscarybutton' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
+          </center>
+        </div>
+
+        <div id="authornotknown" style="display:none" >
+          <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
+
+          <p>Vyvoláva v tebe článok strach?</p>
+
+          <center>
+            <button id='scarybutton1' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
+            <button id='notscarybutton1' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
+          </center>
+        </div>
+
+
+
+        <div id="notscary" style="display:none" >
+          <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
+          <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+          <center>
+            <button id="hatredbutton" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
+            <button id="nohatredbutton" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
+          </center>
+        </div>
+
+
+        <div id="scary" style="display:none" >
+          <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
+
+          <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+          <center>
+            <button id="hatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
+            <button id="nohatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
+          </center>
+
+        </div>
+
+        <div id="nohatred" style="display:none" >
+          <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
+          <p>Dáva článok priestor protistrane?</p>
+          <center>
+            <button id="counterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
+            <button id="nocounterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
+          </center>
+        </div>
+
+        <div id="hatred" style="display:none" >
+          <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
+          <p>Dáva článok priestor protistrane?</p>
+          <center>
+            <button id="counterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
+            <button id="nocounterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
+          </center>
+        </div>
+
+        <div id="counterparty" style="display:none" >
+          <p>Seriózne médium dá vždy priestor protistrane.</p>
+
+
+
+        </div>
+
+
+        <div id="nocounterparty" style="display:none" >
+          <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
+          <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div >
+<%end %>
+<center>
+  <%= link_to '  Pokračujte ', form32_path, class: "btn btn-primary"%>
+</center>
