@@ -27,6 +27,14 @@ li {
   width: 30%;
 }
 
+[class*="err"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #FFB4B4;
+  border: 5px solid red;
+  height: 50px;
+}
+
 #anchor{
   position: fixed;
   bottom: 0px;

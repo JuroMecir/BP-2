@@ -41,23 +41,46 @@
 </script>
 
 
+<div class="container">
+  <div class="err">
+    <center>
+      POZOR!!! V predchádzajúcom článku sa nachádzali zavádzajúce a nepravdivé informácie.
+    </center>
+  </div>
+</div>
 
 
 
 <% if return_subject_id % 3 == 1 %>
   <div class="row" >
     <div class="container">
+      <p1>V predchádzajúcom článku sa nachádzali nepravdivé informácie. Tieto časti článku sú vyznačené. Po kliknutí na ne sa Vám objaví vysvetlenie, prečo autor nemá pravdu.</p1>
+
+    </div>
+    <div class="container">
       <p1>
         Najnovším trendom je pitie vody ráno, okamžite po zobudení keď vyjdete z postele. <button type="button" id="vvednep" class="btn-warning" onclick="Log(this,'vednep')" data-placement="bottom" title="Na internete neexistuje štúdia, kde by boli potvrdené nižšie spomenuté účinky vody">Vedci potvrdili</button>, že jej medicínska hodnota je pre naše zdravie absolútnym prínosom.
         Pitie vody po hneď zobudení je spájané tak s predchádzaním, ako aj priamo s liečbou veľkého množstva ochorení.
         Medzi ne patria napríklad: Bolesti hlavy, Rôzne telesné bolesti, Artritída, Problémy so srdcom, Epilepsia, Obezita,
-        Tuberkulóza,<button type="button" id="vodarakovina" class="btn-warning" onclick="Log(this,'vodarakovina')" data-placement="bottom" title="Tvrdenie, že voda lieči rakovinu nie je ničím potvrdené. Taktiež v článku nie je uvedené v akom štádiu rakoviny má pacient byť či o aký nádor sa má jednať aby liečba vodou fungovala. "> Rakovina</button>, Meningitída, Ochorenia obličiek, Zvracanie, Gastritída, <button type="button" id="vitc=kyslask" class="btn-warning" onclick="Log(this,'vitc=kyslask')" data-placement="bottom" title="Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.">Cukrovka</button>, Zápcha, Ochorenia maternice, Choroby uší a hrdla.
+        Tuberkulóza,<button type="button" id="vodarakovina" class="btn-warning" onclick="Log(this,'vodarakovina')" data-placement="bottom" title="Tvrdenie, že voda lieči rakovinu nie je ničím potvrdené. Taktiež v článku nie je uvedené v akom štádiu rakoviny má pacient byť či o aký nádor sa má jednať aby liečba vodou fungovala. "> Rakovina</button>, Meningitída, Ochorenia obličiek, Zvracanie, Gastritída, <button type="button" id="vodacukrovka" class="btn-warning" onclick="Log(this,'vodacukrovka')" data-placement="bottom" title="Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.">Cukrovka</button>, Zápcha, Ochorenia maternice, Choroby uší a hrdla.
         Ako a koľko vody treba ráno vypiť? Pre správne uplatnenie tejto metódy dodržiavajte tri pravidlá.
         <ul>
           <li>Po probudení, ešte predtým, než urobíte čokoľvek iné, vypite 4 približne 1,75 dcl poháre vody. Dohromady by ste teda mali vypiť asi 7 dcl (0,7 litra) vody. Zapamätajte si, že ak existuje nejaký dôvod, prečo nemôžete naraz vypiť také množstvo vody, tak začnite s toľko, koľko zvládnete a postupne to zvyšujte až na požadovaných 7 dcl.</li>
           <li>Snáď netreba ani uvádzať, že piť by ste mali čistú, nebublinkovú vodu. Ak používate tú z vodovodu, nechajte ju cez noc odstáť, aby z nej vyprchal chlór. Ak používate kupovanú vo fľašiach, uprednostníte menej mineralizovanú, aby ste si nazarobili na obličkové kamene. V oboch prípadoch si do vody môžete pridať plátok citrónu, ktorý jej dodá príjemnejšiu chuť.</li>
           <li>Po vypití vody si umyte zuby a vykonajte zvyšok rannej rutiny osobnej hygieny. Potom čakajte 45 minút predtým, než čokoľvek zjete alebo znova vypijete.Po 45 minútach sa naraňajkujte ako zvyčajne a potom opäť nič nejedzte, ani nepite počas nasledujúcich 2 hodín.</li>
         </ul>
+        Výskum ukázal, že pri použití uvedenej metódy je na vyliečenie rôznych ochorení potrebné dodržiavať daný režim určitý počet dní,
+        v závislosti od typu ochorenia:
+
+        <button type="button" id="vodatlak" class="btn-warning" onclick="Log(this,'vodatlak')" data-placement="bottom" title="Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.">Vysoký krvný tlak – 30 dní,</button>
+
+        Tráviace problémy – 10 dní,
+
+        <button type="button" id="vodacukrovka2" class="btn-warning" onclick="Log(this,'vodacukrovka2')" data-placement="bottom" title="Príčinou cukrovky je nedostatok inzulínu v tele. Nadmerné pitie vody teda pri cukrovke nepomáha.">Cukrovka – 30 dní,</button>
+
+        Zápcha – 10 dní,
+
+        <button type="button" id="vodarakovina2" class="btn-warning" onclick="Log(this,'vodarakovina2')" data-placement="bottom" title="Tvrdenie, že voda lieči rakovinu nie je ničím potvrdené. Taktiež v článku nie je uvedené v akom štádiu rakoviny má pacient byť či o aký nádor sa má jednať aby liečba vodou fungovala. ">Rakovina – 180 dní. </button>
       </p1>
     </div>
   </div >
@@ -68,6 +91,7 @@
   <div class="row" >
     <div class="container">
       <p1>
+        V predchádzajúcom článku boli niektoré vyjadrenia zavádzajúce:
         <ul>
           <li>Na imternete neexistuje vedecká štúdia, ktorá by potvrdzovala liečivé vlastnosti vody v predchádzajúcom článku.</li>
           <li>Správna hydratácia je prevenciou nízkeho krvného tlaku. Na liečbu vysokého krvného tlaku sa používajú lieky, ktoré odvodňujú organizmus.</li>
@@ -82,11 +106,10 @@
 
 
 <% if return_subject_id % 3 == 2 %>
-  <div class="row" >
     <div class="row" >
       <div  style="width:50%; background:#F0F8FF" class="container" >
 
-        <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
+        <p> Ahoj! Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
 
         <p> Je známy autor tohto článku?</p>
         <center>
@@ -161,7 +184,7 @@
         <div id="counterparty" style="display:none" >
           <p>Seriózne médium dá vždy priestor protistrane.</p>
 
-
+          <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
 
         </div>
 
@@ -177,9 +200,6 @@
         </div>
       </div>
     </div>
-
-
-  </div >
 <%end %>
 <center>
   <%= link_to '  Pokračujte ', form32_path, class: "btn btn-primary"%>

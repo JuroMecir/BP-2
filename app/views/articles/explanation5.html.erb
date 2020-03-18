@@ -40,7 +40,13 @@
     }
 </script>
 
-
+<div class="container">
+  <div class="err">
+    <center>
+      POZOR!!! V predchádzajúcom článku sa nachádzali zavádzajúce a nepravdivé informácie.
+    </center>
+  </div>
+</div>
 
 
 
@@ -48,6 +54,7 @@
   <div class="row" >
     <div class="container">
       <p1>
+        V predchádzajúcom článku boli niektoré vyjadrenia zavádzajúce:
         <ul>
           <li> Vedecká štúdia na ktorú sa autor odkazuje nebola nájdená. </li>
           <li> K darovaniu orgánov dochádza až po definitívnej a nezvratnej smrti pacienta. </li>
@@ -64,7 +71,13 @@
 
 <% if return_subject_id % 3 == 0 %>
   <div class="row" >
+  <div class="container">
+    <p1>V predchádzajúcom článku sa nachádzali nepravdivé informácie. Tieto časti článku sú vyznačené. Po kliknutí na ne sa Vám objaví vysvetlenie, prečo autor nemá pravdu.</p1>
+
+  </div>
+
     <div class="container">
+
       <p1>
         Ak ste darca orgánu, možno ste si to postavenie vybrali z dobrej vôle, nazdávajúc sa, že vám lekársky personál neodoberie orgány skôr,
         ako budete mŕtvi a bez vedomia. <button type="button" id="orgstudy" class="btn-warning" onclick="Log(this,'orgstudy')" data-placement="bottom" title="Vedecká štúdia na ktorú sa autor odkazuje nebola nájdená."> Nová vedecká štúdia</button> však odhaľuje, že k <button type="button" id="orgodob" class="btn-warning" onclick="Log(this,'orgodob')" data-placement="bottom" title="K odoberaniu orgánov dochádza výlučne po mozgovej smrti. Po mozgovej smrti nedokáže pacient nič cítiť, pretože je mŕtvy."> odoberaniu orgánov veľmi pravdepodobne dochádza aj vtedy,
@@ -166,7 +179,7 @@
 
       <div id="counterparty" style="display:none" >
         <p>Seriózne médium dá vždy priestor protistrane.</p>
-
+        <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
 
 
       </div>

@@ -1,29 +1,18 @@
-<% provide(:title, 'Registrácia') %>
-<% provide(:button_text, 'Pokracuj') %>
-<h1><--Placeholder--></h1>
+
+<% provide(:button_text, 'Začať experiment') %>
+<h1> Vitajte !</h1>
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
+
     <div class="container">
       <p>
-       <--Instruction-->
+        Vitajte na eye-trackingovom experimente, kde skúmame ako používatelia čítajú články na internete. Základné informácie o experimente:
+        <ul>
+          <li>Experiment bude trvať približne x minút.</li>
+          <li>Počas experimentu budeme nahrávať kam sa pozeráte a čo sa deje na obrazovke. Nebudeme nahrávať vašu tvár ani zvuk.</li>
+          <li>V experimente Vám budú prezentované rôzne články z internetu. Pozorne si ich prečítajte a následne vyplňte krátky dotazník.</li>
+          <li>Vypočujte si pokyny vedúceho experimentu. Na jeho pokyn stlačte tlačidlo začať experiment. </li>
+        </ul>
       </p>
-      <p>
-        <--Instruction-->
-      </p>
-      <p>
-        <--Instruction-->
-      </p>
-      <p>
-        <--Instruction-->
-      </p>
-      <p>
-        <--Instruction-->
-      </p>
-      <p>
-        <--Instruction-->
-      </p>
-
+      <%= render 'form' %>
     </div>
-    <%= render 'form' %>
-  </div>
 </div>
