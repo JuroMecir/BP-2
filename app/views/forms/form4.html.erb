@@ -4,18 +4,18 @@
       <iframe src=<%= "https://docs.google.com/forms/d/e/1FAIpQLSfWZgttXaguklN2SSeEnH9cajNM_T5tP4QuEni8dJ9HZ2orFw/viewform?usp=pp_url&entry.913559758=#{return_subject_id}" %> width="720" height="520" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
     </div>
     <div class="col-sm-4"  align="right">
-      <p>Vyplňte dotazník a stlačte tlačidlo Pokračujte.</p>
+      <p>Vyplňte dotazník a stlačte tlačidlo Pokračovať.</p>
 
       <% if return_subject_id % 3 == 0 %>
-        <%= link_to ' pokracujte ', article1_path, class: "btn btn-primary"%>
+        <%= link_to ' Pokračovať ', article1_path, class: "btn btn-primary"%>
       <%end %>
 
       <% if return_subject_id % 3 == 1 %>
-        <%= link_to ' pokracujte ', article3_path, class: "btn btn-primary"%>
+        <%= link_to ' Pokračovať ', article3_path, class: "btn btn-primary"%>
       <%end %>
 
       <% if return_subject_id % 3 == 2 %>
-        <%= link_to ' pokracujte ', article5_path, class: "btn btn-primary"%>
+        <%= link_to ' Pokračovať ', article5_path, class: "btn btn-primary"%>
       <%end %>
 
     </div>
