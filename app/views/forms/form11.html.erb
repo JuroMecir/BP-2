@@ -1,3 +1,25 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" charset="utf-8">
+    function Log(element, id) {
+
+        let rect = element.getBoundingClientRect();
+        $.ajax({
+            type: "POST",
+            url: "/logs",
+            data: {log: {subject_id: <%=return_subject_id %>, button_name: id, position_x: rect.x, position_y: rect.y}},
+            success: function(
+            ){
+            }
+        });
+    }
+</script>
+
+
 
 <div class='container'>
   <div class="row">
@@ -6,9 +28,7 @@
     </div>
     <div class="col-sm-4"  align="right">
       <p>Vyplňte dotazník a stlačte tlačidlo Pokračovať.</p>
-
-        <%= link_to ' Pokračovať ', explanation1_path, class: "btn btn-primary"%>
-
+      <a href='<%=explanation1_path%>'  class="btn btn-primary", onclick="Log( this,'form11leave')">Pokračovať</a>
     </div>
   </div>
 </div>

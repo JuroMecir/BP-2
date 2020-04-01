@@ -1,5 +1,14 @@
+<%= javascript_include_tag "application" %>
+
 <%= form_for(@subject) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
+
+
+
+
+  <p><input type="checkbox" required name="suhlas" id="suhlas" ></p>
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
+
+

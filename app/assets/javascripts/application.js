@@ -15,16 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-
-$(document).ready(function () {
-    $('.button').on('click', function () {
-        $.ajax({
-            type: "POST",
-            url: "/logs",
-            data: {log: {subject_id: '1', button_name: 'sks'}},
-            success: function () {
-                alert('msg');
-            }
-        })
-    })
-});
+function validateCheckbox()
+{
+    if( $('#checkbox').attr('checked')){
+        alert("you have to accept the terms first");
+    }
+}

@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/form4', to: 'forms#form4'
   get '/form51', to: 'forms#form51'
   get '/form52', to: 'forms#form52'
+  get '/end', to: 'application#end'
   get '/explanation1', to:'articles#explanation1'
   get '/explanation5', to:'articles#explanation5'
   get '/explanation3', to:'articles#explanation3'

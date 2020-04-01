@@ -1,5 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-   <div class="row" >
+
+<script type="text/javascript" charset="utf-8">
+    function Log(element, id) {
+
+        let rect = element.getBoundingClientRect();
+        $.ajax({
+            type: "POST",
+            url: "/logs",
+            data: {log: {subject_id: <%=return_subject_id %>, button_name: id, position_x: rect.x, position_y: rect.y}},
+            success: function(
+            ){
+            }
+        });
+    }
+</script>
+
+
+
+
+
+<div class="row" >
       <div class="container">
         <h1>
           Dávajte si pozor na umelý vitamín C
@@ -28,5 +52,5 @@
 
 
 <center>
-  <%= link_to '  Pokračovať ', form11_path, class: "btn btn-primary"%>
+  <a href='<%=form11_path%>'  class="btn btn-primary", onclick="Log( this,'article1leave')">Pokračovať</a>
 </center>
