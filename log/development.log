@@ -48922,3 +48922,46 @@ Processing by SubjectsController#new as HTML
 Completed 200 OK in 603ms (Views: 581.7ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/subjects" for 127.0.0.1 at 2020-04-04 19:38:58 +0200
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6x4arG+mORxqPb2MctI1VVIbaYsLehlc1bpibWcJH+3l5Sm+Qhm338KHJOQ5Bp+WyO+Zvv7tdlYUBXlCyHnjhg==", "commit"=>"Súhlasím, začať experiment"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[36mSubject Create (2.2ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-04-04 17:38:58.602582"], ["updated_at", "2020-04-04 17:38:58.602582"]]
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:37
+Redirected to http://127.0.0.1:3000/subjects/88
+Completed 302 Found in 18ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/subjects/88" for 127.0.0.1 at 2020-04-04 19:38:58 +0200
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mSubject Load (6.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:75
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 315ms (Views: 282.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 19:42:08 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered subjects/_form.html.erb (284.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered subjects/new.html.erb within layouts/application (324.1ms)
+Completed 200 OK in 467ms (Views: 448.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 19:42:21 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered subjects/_form.html.erb (85.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered subjects/new.html.erb within layouts/application (124.2ms)
+Completed 200 OK in 258ms (Views: 239.6ms | ActiveRecord: 0.0ms)
+
+
