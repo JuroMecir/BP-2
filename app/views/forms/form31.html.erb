@@ -19,7 +19,10 @@
     }
 </script>
 
+<script>
+    setTimeout(function(){  let y =document.getElementById('button');y.style.display = "block"; }, 3000);
 
+</script>
 
 <div class='container'>
   <div class="row">
@@ -30,7 +33,7 @@
       <p>Vyplňte dotazník a stlačte tlačidlo Pokračovať.</p>
 
 
-      <a href='<%=explanation3_path%>'  class="btn btn-primary", onclick="Log( this,'form31leave')">Pokračovať</a>
+      <a href='<%=explanation3_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form31leave')" style="display: none;">Pokračovať</a>
     </div>
   </div>
 </div>

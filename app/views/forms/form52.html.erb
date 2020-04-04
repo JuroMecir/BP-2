@@ -19,6 +19,10 @@
     }
 </script>
 
+<script>
+    setTimeout(function(){  let y =document.getElementById('button');y.style.display = "block"; }, 3000);
+
+</script>
 
 
 
@@ -31,15 +35,15 @@
       <p>Vyplňte dotazník a stlačte tlačidlo Pokračovať.</p>
 
       <% if return_subject_id % 3 == 0 %>
-        <a href='<%=article2_path%>'  class="btn btn-primary", onclick="Log( this,'form52leave')">Pokračovať</a>
+        <a href='<%=article2_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form52leave')" style="display: none;">Pokračovať</a>
       <%end %>
 
       <% if return_subject_id % 3  == 1 %>
-        <a href='<%=article4_path%>'  class="btn btn-primary", onclick="Log( this,'form52leave')">Pokračovať</a>
+        <a href='<%=article4_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form52leave')" style="display: none;">Pokračovať</a>
       <%end %>
 
       <% if return_subject_id % 3 == 2 %>
-        <a href='<%=end_path%>'  class="btn btn-primary", onclick="Log( this,'form52leave')">Pokračovať</a>
+        <a href='<%=end_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form52leave')" style="display: none;">Pokračovať</a>
       <%end %>
 
 

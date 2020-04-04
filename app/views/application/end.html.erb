@@ -5,4 +5,5 @@
 
   </div>
 </div>
-<center><%= link_to  'Domov', new_subject_path, class: 'btn btn-primary'  %></center>
+<center><%= link_to  'Domov', root_url, class: 'btn btn-primary', :onclick => log_out  %></center>
+<%= render 'layouts/footer' %>

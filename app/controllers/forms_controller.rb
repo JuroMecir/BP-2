@@ -1,8 +1,7 @@
 class FormsController < ApplicationController
- def new
- end
 
-  def create
-    log_in @subject
-  end
+  before_action :logged_in_subject
+  include_all_helpers
+
+
 end

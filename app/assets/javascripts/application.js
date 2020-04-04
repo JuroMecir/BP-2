@@ -13,11 +13,8 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require jquery
 //= require_tree .
 
-function validateCheckbox()
-{
-    if( $('#checkbox').attr('checked')){
-        alert("you have to accept the terms first");
-    }
-}
+

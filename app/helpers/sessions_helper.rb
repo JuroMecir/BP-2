@@ -18,6 +18,14 @@ module SessionsHelper
       @current_subject ||= Subject.find_by(id: session[:subject_id])
     end
   end
+
+  def logged_in_subject
+    unless logged_in?
+      flash[:danger] = "" " Prosím udeľte súhlas so spracovaním vašich osobných informácií"
+      redirect_to root_url
+    end
+  end
+
   def log_out
     session.delete(:subject_id)
   end

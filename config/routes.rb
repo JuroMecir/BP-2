@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get '/explanation1', to:'articles#explanation1'
   get '/explanation5', to:'articles#explanation5'
   get '/explanation3', to:'articles#explanation3'
-  get '/test', to: 'application#application'
+
 
   post '/subjects/new', to:'subjects#create'
   post '/logs/new', to:'logs#create'

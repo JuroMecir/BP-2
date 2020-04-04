@@ -1,5 +1,6 @@
 class SubjectsController < ApplicationController
   before_action :set_subject, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_subject, only: new
   include_all_helpers
 
   # GET /subjects
@@ -7,6 +8,8 @@ class SubjectsController < ApplicationController
   def index
     @subjects = Subject.all
   end
+
+
 
   # GET /subjects/1
   # GET /subjects/1.json
@@ -33,7 +36,7 @@ class SubjectsController < ApplicationController
     respond_to do |format|
       if @subject.save
         log_in @subject
-        format.html { redirect_to @subject, notice: 'Subject was successfully created.' }
+        format.html { redirect_to @subject }
         format.json { render :show, status: :created, location: @subject }
       else
         format.html { render :new }
