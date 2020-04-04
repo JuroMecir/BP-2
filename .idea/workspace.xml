@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894a096d-b8e3-4790-a436-576e1ce5b62b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-    </list>
+    <list default="true" id="894a096d-b8e3-4790-a436-576e1ce5b62b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +17,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/forms/form52.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -36,11 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/subjects/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="175">
+              <caret line="13" column="111" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_footer.erb" />
         <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/forms/form2.html.erb" />
         <option value="$PROJECT_DIR$/app/views/forms/form4.html.erb" />
         <option value="$PROJECT_DIR$/app/views/forms/form11.html.erb" />
@@ -182,6 +182,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -508,12 +509,12 @@
       <workItem from="1585914727591" duration="394000" />
       <workItem from="1585920705663" duration="9601000" />
       <workItem from="1586013524134" duration="4142000" />
-      <workItem from="1586018463453" duration="2843000" />
+      <workItem from="1586018463453" duration="3544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223663000" />
+    <option name="totallyTimeSpent" value="224364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,15 +526,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20671141" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.47986576" weight="0.3243626" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="2" sideWeight="0.52348995" side_tool="true" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.52348995" side_tool="true" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4899329" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -725,16 +726,6 @@
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/articles.coffee">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -891,8 +882,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="175">
+          <caret line="13" column="111" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
