@@ -49102,3 +49102,58 @@ Processing by SubjectsController#new as HTML
 Completed 200 OK in 237ms (Views: 217.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-04 21:09:51 +0200
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (9993.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered subjects/new.html.erb within layouts/application (10043.7ms)
+Completed 200 OK in 10293ms (Views: 10247.0ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2020-04-04 21:12:10 +0200
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eUCpmI7A8XMzsehvZJDF5nOS8d/unA4jha4PLCPwE+J3u5qKo39/sJsLcQcvRG8l6WYB6hsLYSlEERQDjIDviQ==", "commit"=>"Súhlasím, začať experiment"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[36mSubject Create (2.4ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-04-04 19:12:11.029969"], ["updated_at", "2020-04-04 19:12:11.029969"]]
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:37
+Redirected to http://127.0.0.1:3000/subjects/89
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/subjects/89" for 127.0.0.1 at 2020-04-04 21:12:11 +0200
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mSubject Load (1.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:75
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 232ms (Views: 186.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-04-04 21:12:21 +0200
+Started GET "/article3" for 127.0.0.1 at 2020-04-04 21:12:21 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"89", "button_name"=>"formstartleave", "position_x"=>"978", "position_y"=>"120.5999984741211"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (318.2ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "89"], ["button_name", "formstartleave"], ["position_x", "978"], ["position_y", "120.5999984741211"], ["created_at", "2020-04-04 19:12:21.453555"], ["updated_at", "2020-04-04 19:12:21.453555"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by ArticlesController#article3 as HTML
+  Rendering articles/article3.html.erb within layouts/application
+  Rendered articles/article3.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 411ms (Views: 392.4ms | ActiveRecord: 0.0ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2099ms (ActiveRecord: 322.2ms)
+
+
