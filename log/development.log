@@ -49055,3 +49055,32 @@ Processing by SubjectsController#new as HTML
 Completed 200 OK in 289ms (Views: 268.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-04 20:49:31 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (88.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered subjects/new.html.erb within layouts/application (127.0ms)
+Completed 200 OK in 270ms (Views: 250.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 20:49:46 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (78.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered subjects/new.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 257ms (Views: 237.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 20:49:52 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered subjects/_form.html.erb (75.1ms)
+  Rendered subjects/new.html.erb within layouts/application (94.6ms)
+Completed 200 OK in 237ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
