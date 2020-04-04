@@ -49093,3 +49093,12 @@ Processing by SubjectsController#new as HTML
 Completed 200 OK in 353ms (Views: 333.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-04 20:55:45 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (73.6ms)
+  Rendered subjects/new.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 237ms (Views: 217.7ms | ActiveRecord: 0.0ms)
+
+
