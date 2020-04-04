@@ -13,7 +13,7 @@ gem 'bootstrap-will_paginate', '>=1.0.0'
 
 gem 'faker'
 
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
