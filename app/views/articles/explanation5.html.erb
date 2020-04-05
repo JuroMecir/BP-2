@@ -159,72 +159,96 @@
       </div>
       <div class='col-xs-4' align="left" style="overflow:auto; height:580px">
         <div  style=" background:#F0F8FF" >
-        <p>Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
-        <p> Je známy autor tohto článku?</p>
-        <center>
-          <button id='authorknownbutton'   class="btn btn-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
-          <button id='authornotknownbutton' class="btn btn-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
-        </center>
+          <p> Ahoj! Pozrel som sa na predchádzajúci článok. Článok sa nachádza na zozname Konspiratori.sk. Treba zvýšiť pozornosť, pretože môže ísť o web, ktorý šíri dezinformácie. Nenašiel som žiadne podozrivé slová používané konšpiračnými webmi. Poďme sa spolu pozrieť na ďalšie možné problémy s týmto článkom.</p>
+
+          <p> Je známy autor tohto článku?</p>
+          <center>
+            <button id='authorknownbutton'   class="btn btn-outline-primary" onclick="Function(this, 'authorknown','authornotknownbutton')">Áno</button>
+            <button id='authornotknownbutton' class="btn btn-outline-primary" onclick="Function(this, 'authornotknown','authorknownbutton')">Nie</button>
+          </center>
 
 
-        <div id="authorknown" style="display:none" >
-          <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
-          <p>Vyvoláva v tebe článok strach?</p>
-          <center>
-            <button id='scarybutton' class="btn btn-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
-            <button id='notscarybutton' class="btn btn-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
-          </center>
-        </div>
+          <div id="authorknown" style="display:none" >
+            <p>To je dobré znamenie. Môžeš si dohľadať jeho ďalšiu tvorbu a pozrieť sa, o čom a ako píše.</p>
 
-        <div id="authornotknown" style="display:none" >
-          <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
-          <p>Vyvoláva v tebe článok strach?</p>
-          <center>
-            <button id='scarybutton1' class="btn btn-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
-            <button id='notscarybutton1' class="btn btn-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
-          </center>
+            <p>Vyvoláva v tebe článok strach?</p>
+
+            <center>
+              <button id='scarybutton' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton')">Áno</button>
+              <button id='notscarybutton' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton')">Nie</button>
+            </center>
+          </div>
+
+          <div id="authornotknown" style="display:none" >
+            <p>Pozor! Ak sa autor nepodpíše, má na to nejaký dôvod. Nestojí si za svojimi tvrdeniami, prípadne by ich nevedel dokázať.</p>
+
+            <p>Vyvoláva v tebe článok strach?</p>
+
+            <center>
+              <button id='scarybutton1' class="btn btn-outline-primary" onclick="Function(this,'scary','notscarybutton1')">Áno</button>
+              <button id='notscarybutton1' class="btn btn-outline-primary" onclick="Function(this,'notscary','scarybutton1')">Nie</button>
+            </center>
+          </div>
+
+
+
+          <div id="notscary" style="display:none" >
+            <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
+            <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+            <center>
+              <button id="hatredbutton" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
+              <button id="nohatredbutton" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
+            </center>
+          </div>
+
+
+          <div id="scary" style="display:none" >
+            <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
+
+            <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
+            <center>
+              <button id="hatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
+              <button id="nohatredbutton1" class="btn btn-outline-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
+            </center>
+
+          </div>
+
+          <div id="nohatred" style="display:none" >
+            <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
+            <p>Dáva článok priestor protistrane?</p>
+            <center>
+              <button id="counterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
+              <button id="nocounterpartybutton" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
+            </center>
+          </div>
+
+          <div id="hatred" style="display:none" >
+            <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
+            <p>Dáva článok priestor protistrane?</p>
+            <center>
+              <button id="counterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
+              <button id="nocounterpartybutton1" class="btn btn-outline-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
+            </center>
+          </div>
+
+          <div id="counterparty" style="display:none" >
+            <p>Seriózne médium dá vždy priestor protistrane.</p>
+
+            <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
+
+          </div>
+
+
+          <div id="nocounterparty" style="display:none" >
+            <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
+            <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
+
+
+
+
+
+          </div>
         </div>
-        <div id="notscary" style="display:none" >
-          <p>To je dobre 🙂 Manipulácia strachom je totiž častá. Treba si vždy dávať pozor na to, či sa niekto snaží vyvolať obavy z nejakej skupiny alebo jednotlivcov.</p>
-          <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
-          <center>
-            <button id="hatredbutton" class="btn btn-primary" onclick="Function(this,'hatred','nohatredbutton')">Áno</button>
-            <button id="nohatredbutton" class="btn btn-primary" onclick="Function(this,'nohatred','hatredbutton')">Nie</button>
-          </center>
-        </div>
-        <div id="scary" style="display:none" >
-          <p>Bacha na to! Manipulácia strachom je častá. Ak sa článok snaží vyvolať strach a obavy z nejakej skupiny ľudí alebo jednotlivcov, je to problém.</p>
-          <p>Šíri článok nenávisť proti nejakej skupine ľudí?</p>
-          <center>
-            <button id="hatredbutton1" class="btn btn-primary" onclick="Function(this,'hatred','nohatredbutton1')">Áno</button>
-            <button id="nohatredbutton1" class="btn btn-primary" onclick="Function(this,'nohatred','hatredbutton1')">Nie</button>
-          </center>
-        </div>
-        <div id="nohatred" style="display:none" >
-          <p>Dobre. V každom prípade sa treba mať na pozore pred nenávistnými prejavmi.</p>
-          <p>Dáva článok priestor protistrane?</p>
-          <center>
-            <button id="counterpartybutton" class="btn btn-primary" onclick="Function(this,'counterparty','nocounterpartybutton')">Áno</button>
-            <button id="nocounterpartybutton" class="btn btn-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton')">Nie</button>
-          </center>
-        </div>
-        <div id="hatred" style="display:none" >
-          <p>Pozor! Nenávistné prejavy môžu skončiť veľmi zle.</p>
-          <p>Dáva článok priestor protistrane?</p>
-          <center>
-            <button id="counterpartybutton1" class="btn btn-primary" onclick="Function(this,'counterparty','nocounterpartybutton1')">Áno</button>
-            <button id="nocounterpartybutton1" class="btn btn-primary" onclick="Function(this,'nocounterparty', 'counterpartybutton1')">Nie</button>
-          </center>
-        </div>
-        <div id="counterparty" style="display:none" >
-          <p>Seriózne médium dá vždy priestor protistrane.</p>
-          <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
-        </div>
-        <div id="nocounterparty" style="display:none" >
-          <p>Novinár musí dať vždy priestor protistrane. Ak to nerobí, pravdepodobne sa ťa snaží manipulovať.</p>
-          <p> Dúfam, že som pomohol overiť dôveryhodnosť článku.</p>
-        </div>
-      </div>
     </div>
   </div>
   </div>

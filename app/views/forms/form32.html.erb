@@ -35,15 +35,15 @@
       <p>Vyplňte dotazník a stlačte tlačidlo Pokračovať.</p>
 
       <% if return_subject_id % 3 == 0 %>
-        <a href='<%=article4_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form32leave')" style="display: none;">Pokračovať</a>
+        <a href='<%=article4_path%>' id="button" class="btn btn-primary", onclick="Log( this,'article4start')" style="display: none;">Pokračovať</a>
       <%end %>
 
       <% if return_subject_id % 3 == 1 %>
-        <a href='<%=end_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form32leave')" style="display: none;">Pokračovať</a>
+        <a href='<%=end_path%>' id="button" class="btn btn-primary", onclick="Log( this,'end')" style="display: none;">Pokračovať</a>
       <%end %>
 
       <% if return_subject_id % 3 == 2 %>
-        <a href='<%=article2_path%>' id="button" class="btn btn-primary", onclick="Log( this,'form32leave')" style="display: none;">Pokračovať</a>
+        <a href='<%=article2_path%>' id="button" class="btn btn-primary", onclick="Log( this,'article2start')" style="display: none;">Pokračovať</a>
 
       <%end %>
 
