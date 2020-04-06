@@ -21,7 +21,7 @@ module SessionsHelper
 
   def logged_in_subject
     unless logged_in?
-      flash[:danger] = "" " Prosím udeľte súhlas so spracovaním vašich osobných informácií"
+      flash[:danger] = " Prosím udeľte súhlas so spracovaním vašich osobných informácií"
       redirect_to root_url
     end
   end
