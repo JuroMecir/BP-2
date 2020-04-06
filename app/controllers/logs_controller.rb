@@ -31,7 +31,7 @@ class LogsController < ApplicationController
         format.html { }
         format.json { render :show, status: :created, location: @log }
       else
-        format.html { render :new }
+        format.html { }
         format.json { render json: @log.errors, status: :unprocessable_entity }
       end
     end

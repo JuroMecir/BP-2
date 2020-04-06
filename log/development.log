@@ -49157,3 +49157,187 @@ No template found for LogsController#create, rendering head :no_content
 Completed 204 No Content in 2099ms (ActiveRecord: 322.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-06 07:54:41 +0200
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-04-06 07:54:44 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (9817.1ms)
+  Rendered subjects/new.html.erb within layouts/application (9838.6ms)
+Completed 500 Internal Server Error in 9953ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/juraj mecir/Desktop/BP-2/tmp/cache/assets/sprockets/v3.0/Gk/GkDFwgym0iN_np3BOzhfbUtYvKXs8Uwm55pSl7wnpRw.cache.56069680.791572.270048, C:/Users/juraj mecir/Desktop/BP-2/tmp/cache/assets/sprockets/v3.0/Gk/GkDFwgym0iN_np3BOzhfbUtYvKXs8Uwm55pSl7wnpRw.cache)):
+    1: <%= javascript_include_tag "application" %>
+    2: 
+    3: <%= form_for(@subject) do |f| %>
+    4:   <%= render 'shared/error_messages', object: f.object %>
+  
+app/views/subjects/_form.html.erb:1:in `_app_views_subjects__form_html_erb__643540185_55474360'
+app/views/subjects/new.html.erb:42:in `_app_views_subjects_new_html_erb__13366913_46798980'
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered subjects/_form.html.erb (18613.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered subjects/new.html.erb within layouts/application (19137.2ms)
+Completed 200 OK in 19440ms (Views: 19383.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-06 07:56:34 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered subjects/_form.html.erb (79.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered subjects/new.html.erb within layouts/application (115.6ms)
+Completed 200 OK in 251ms (Views: 232.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-06 07:56:39 +0200
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered subjects/_form.html.erb (65.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered subjects/new.html.erb within layouts/application (100.9ms)
+Completed 200 OK in 231ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2020-04-06 07:56:44 +0200
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RbLSlaTFvPZeSVesCQFPQt4uginPeIxgOyW0kOsXC7lGu9GMfp12TxTlzzCXMiF8pFaMFHJwE1ouZUus6tKlMA==", "commit"=>"Súhlasím, začať experiment"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[36mSubject Create (2.6ms)[0m  [1m[32mINSERT INTO "subjects" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-04-06 05:56:44.824968"], ["updated_at", "2020-04-06 05:56:44.824968"]]
+  ↳ app/controllers/subjects_controller.rb:37
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/subjects_controller.rb:37
+Redirected to http://127.0.0.1:3000/subjects/90
+Completed 302 Found in 8ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/subjects/90" for 127.0.0.1 at 2020-04-06 07:56:44 +0200
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mSubject Load (1.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:75
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 226ms (Views: 164.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:56:49 +0200
+Started GET "/article5" for 127.0.0.1 at 2020-04-06 07:56:49 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"article5start", "position_x"=>"978", "position_y"=>"120.5999984741211"}}
+Processing by ArticlesController#article5 as HTML
+  Rendering articles/article5.html.erb within layouts/application
+  Rendered articles/article5.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 168ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (2.5ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "article5start"], ["position_x", "978"], ["position_y", "120.5999984741211"], ["created_at", "2020-04-06 05:56:49.889401"], ["updated_at", "2020-04-06 05:56:49.889401"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1645ms (ActiveRecord: 32.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:56:51 +0200
+Started GET "/form51" for 127.0.0.1 at 2020-04-06 07:56:51 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"article5leave", "position_x"=>"719.2999877929688", "position_y"=>"477"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "article5leave"], ["position_x", "719.2999877929688"], ["position_y", "477"], ["created_at", "2020-04-06 05:56:51.525526"], ["updated_at", "2020-04-06 05:56:51.525526"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1250ms (ActiveRecord: 1.1ms)
+
+
+Processing by FormsController#form51 as HTML
+  Rendering forms/form51.html.erb within layouts/application
+  Rendered forms/form51.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 173ms (Views: 155.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:56:56 +0200
+Started GET "/explanation5" for 127.0.0.1 at 2020-04-06 07:56:56 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"explanation5start", "position_x"=>"978", "position_y"=>"87.5999984741211"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.7ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "explanation5start"], ["position_x", "978"], ["position_y", "87.5999984741211"], ["created_at", "2020-04-06 05:56:56.959652"], ["updated_at", "2020-04-06 05:56:56.959652"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Processing by ArticlesController#explanation5 as HTML
+  Rendering articles/explanation5.html.erb within layouts/application
+  Rendered articles/explanation5.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 453ms (Views: 432.8ms | ActiveRecord: 0.0ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1743ms (ActiveRecord: 21.8ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:56:59 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"expl5b2", "position_x"=>"490.20001220703125", "position_y"=>"134.60000610351562"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (0.4ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "expl5b2"], ["position_x", "490.20001220703125"], ["position_y", "134.60000610351562"], ["created_at", "2020-04-06 05:56:59.599776"], ["updated_at", "2020-04-06 05:56:59.599776"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:57:00 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"expl5b1", "position_x"=>"198", "position_y"=>"134.60000610351562"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (1.3ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "expl5b1"], ["position_x", "198"], ["position_y", "134.60000610351562"], ["created_at", "2020-04-06 05:57:00.503141"], ["updated_at", "2020-04-06 05:57:00.503141"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:57:01 +0200
+Started POST "/logs" for 127.0.0.1 at 2020-04-06 07:57:01 +0200
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"expl5b3", "position_x"=>"437.2749938964844", "position_y"=>"215"}}
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (7.8ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "expl5b3"], ["position_x", "437.2749938964844"], ["position_y", "215"], ["created_at", "2020-04-06 05:57:01.708305"], ["updated_at", "2020-04-06 05:57:01.708305"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3111ms (ActiveRecord: 1.1ms)
+
+
+Processing by LogsController#create as */*
+  Parameters: {"log"=>{"subject_id"=>"90", "button_name"=>"expl5b4", "position_x"=>"198", "position_y"=>"345"}}
+  [1m[35m (5.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[36mLog Create (13.0ms)[0m  [1m[32mINSERT INTO "logs" ("subject_id", "button_name", "position_x", "position_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["subject_id", "90"], ["button_name", "expl5b4"], ["position_x", "198"], ["position_y", "345"], ["created_at", "2020-04-06 05:57:03.036527"], ["updated_at", "2020-04-06 05:57:03.036527"]]
+  ↳ app/controllers/logs_controller.rb:30
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/logs_controller.rb:30
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 3333ms (ActiveRecord: 17.6ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 2730ms (ActiveRecord: 18.9ms)
+
+
+No template found for LogsController#create, rendering head :no_content
+Completed 204 No Content in 1715ms (ActiveRecord: 34.1ms)
+
+
