@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="894a096d-b8e3-4790-a436-576e1ce5b62b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/explanation3.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/explanation3.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form11.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form11.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form12.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form12.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form2.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form31.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form31.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form32.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form32.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form4.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form4.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form51.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form51.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/form52.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forms/form52.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/subjects/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/subjects/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,38 +17,11 @@
     <SUITE FILE_PATH="coverage/BP_2@db_migrate.rcov" NAME="db:migrate Coverage Results" MODIFIED="1583171505240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Bakalarka" />
     <SUITE FILE_PATH="coverage/BP_2@Production__Bakalarka.rcov" NAME="Production: Bakalarka Coverage Results" MODIFIED="1583171858008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Bakalarka" />
     <SUITE FILE_PATH="coverage/Bakalarka@Development__Bakalarka.rcov" NAME="Development: Bakalarka Coverage Results" MODIFIED="1581073303268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Bakalarka" />
-    <SUITE FILE_PATH="coverage/BP_2@Development__Bakalarka.rcov" NAME="Development: Bakalarka Coverage Results" MODIFIED="1586208608374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Bakalarka" />
+    <SUITE FILE_PATH="coverage/BP_2@Development__Bakalarka.rcov" NAME="Development: Bakalarka Coverage Results" MODIFIED="1586716452578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Bakalarka" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/forms/form4.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/forms/form31.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/forms/form32.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/subjects/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
@@ -65,19 +31,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subjects/new.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="51">
+              <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/forms/form51.html.erb">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+            <state relative-caret-position="352">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/subjects_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -85,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/forms/form52.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="578">
               <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
             </state>
           </provider>
@@ -94,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/explanation1.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="3723">
               <caret line="219" column="42" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
             </state>
           </provider>
@@ -103,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/explanation3.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="1241">
               <caret line="73" column="265" selection-start-line="73" selection-start-column="265" selection-end-line="73" selection-end-column="265" />
             </state>
           </provider>
@@ -112,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/forms/form11.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="544">
               <caret line="32" column="78" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="78" />
             </state>
           </provider>
@@ -167,10 +152,7 @@
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/forms_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/application/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_footer.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/end.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_form.html.erb" />
@@ -192,6 +174,9 @@
         <option value="$PROJECT_DIR$/app/views/forms/form52.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/explanation3.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
       </list>
     </option>
   </component>
@@ -202,7 +187,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="70" />
     <option name="y" value="5" />
     <option name="width" value="1400" />
@@ -295,7 +280,19 @@
               <item name="BP-2" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP-2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="subjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP-2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,12 +494,13 @@
       <workItem from="1586114195594" duration="4136000" />
       <workItem from="1586152089565" duration="761000" />
       <workItem from="1586205740862" duration="3229000" />
-      <workItem from="1586454830219" duration="1089000" />
+      <workItem from="1586454830219" duration="1283000" />
+      <workItem from="1586716062314" duration="305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240605000" />
+    <option name="totallyTimeSpent" value="241104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +516,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.31415093" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3207547" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.47919464" weight="0.3243626" />
@@ -565,10 +563,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.erb" />
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -596,13 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -711,9 +698,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/subjects_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -737,13 +721,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -760,64 +737,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form4.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="561">
           <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form31.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="544">
           <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form32.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="578">
           <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subjects/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form51.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="561">
           <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form52.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="578">
           <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/explanation1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="3723">
           <caret line="219" column="42" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/explanation3.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="1241">
           <caret line="73" column="265" selection-start-line="73" selection-start-column="265" selection-end-line="73" selection-end-column="265" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms/form11.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="544">
           <caret line="32" column="78" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subjects/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -825,6 +802,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/subjects_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
